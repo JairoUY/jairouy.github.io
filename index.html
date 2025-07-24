@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jairo Torres</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/96f866440f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section id="home">
+      <div id="welcome-text">
+        <h1>¡Hola! soy <strong id="name">Jairo Torres</strong>,</h1>
+        <p id="profession">
+          <span class="code-simbol lt">&lt;</span>Desarrollador Web<span
+            class="code-simbol gt"
+            >/&gt;</span
+          >
+        </p>
+      </div>
+
+      <div id="scroll-text">
+        <a href="#about-me"
+          >¡Hacé scroll para conocerme!
+          <span><i class="fa-solid fa-angle-down"></i></span>
+        </a>
+      </div>
+    </section>
+
+    <section id="about-me">
+      <div id="profile">
+        <img src="./assets/imgs/me.png" alt="Jairo Torres" id="profile-pic" />
+      </div>
+      <div id="about-me-text">
+        <p>
+          Tengo 22 años, soy de Canelones, Uruguay. Actualmente estoy formándome
+          como desarrollador web a través del programa JaP (Jóvenes a
+          Programar), un curso online que me está ayudando a reforzar y expandir
+          mis conocimientos en programación.
+        </p>
+        <p>
+          Aunque ya había tenido un primer acercamiento a HTML y CSS hace unos
+          años <i>—de forma autodidacta—</i>, fue recién en este último tiempo
+          que decidí retomarlo en serio y empezar desde cero.
+        </p>
+        <p>
+          Además de programar, me gustan los jueguitos y dibujar, dos
+          actividades que también me inspiran a crear y pensar de forma creativa
+          en mis proyectos.
+        </p>
+        <p>
+          Mi objetivo es seguir creciendo como desarrollador, crear soluciones
+          útiles y seguir aprendiendo día a día. Estoy entusiasmado por todo lo
+          que todavía queda por descubrir en este camino.
+        </p>
+      </div>
+    </section>
+    <hr />
+    <section id="skills">
+      <h2>Mis Skills</h2>
+      <div id="skills-container">
+        <div class="skill">
+          <input type="radio" name="skills" id="html" checked />
+          <label for="html"
+            ><img src="./assets/imgs/HTML5_logo.png" alt="HTML5 Logo" />
+            <h3>HTML5</h3>
+          </label>
+        </div>
+        <div class="skill">
+          <input type="radio" name="skills" id="css" />
+          <label for="css">
+            <img src="./assets/imgs/CSS3_logo.png" alt="CSS3 Logo" />
+            <h3>CSS3</h3>
+          </label>
+        </div>
+        <div class="skill">
+          <input type="radio" name="skills" id="js" />
+          <label for="js">
+            <img
+              src="./assets/imgs/JavaScript_logo.png"
+              alt="JavaScript Logo"
+            />
+            <h3>JavaScript</h3>
+          </label>
+        </div>
+      </div>
+      <div id="skills-definitions-container">
+        <div class="skill-definition html">
+          <h4>¿Qué es?</h4>
+          <p>
+            Es el lenguaje que se usa para estructurar el contenido de una
+            página web. Es como los cimientos de una casa: define qué cosas hay
+            (texto, imágenes, botones, formularios, etc.).
+          </p>
+          <h4>¿Para qué sirve?</h4>
+          <p>
+            Sirve para crear la estructura básica de un sitio web, organizando
+            el contenido en títulos, párrafos, listas, enlaces, secciones, etc.
+          </p>
+        </div>
+        <div class="skill-definition css">
+          <h4>¿Qué es?</h4>
+          <p>
+            Es el lenguaje que se usa para darle estilo y diseño a una página
+            web. Es como la "ropa" del sitio: colores, tamaños, posiciones,
+            animaciones y más.
+          </p>
+          <h4>¿Para qué sirve?</h4>
+          <p>
+            Sirve para hacer que una web se vea bien y sea agradable para el
+            usuario. Controla cosas como los colores, fuentes, márgenes, diseños
+            responsivos, etc.
+          </p>
+        </div>
+        <div class="skill-definition js">
+          <h4>¿Qué es?</h4>
+          <p>
+            Es un lenguaje de programación que le da interactividad a la web. Es
+            como el "cerebro" de la página.
+          </p>
+          <h4>¿Para qué sirve?</h4>
+          <p>
+            Sirve para que la página reaccione a lo que hace el usuario. Por
+            ejemplo, mostrar u ocultar elementos, validar formularios, hacer
+            menús interactivos, cargar contenido sin recargar la página, etc.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>
+        <span class="code-simbol lt">&lt;</span>Proyectos<span
+          class="code-simbol gt"
+          >/&gt;</span
+        >
+      </h2>
+      <div id="projects-container">
+        <input type="radio" name="carousel" id="project1" checked />
+        <input type="radio" name="carousel" id="project2" />
+        <input type="radio" name="carousel" id="project3" />
+
+        <div id="project-prev-btns">
+          <label for="project3" class="prev-btn prev1"
+            ><i class="fa-solid fa-chevron-left"></i
+          ></label>
+          <label for="project1" class="prev-btn prev2"
+            ><i class="fa-solid fa-chevron-left"></i
+          ></label>
+          <label for="project2" class="prev-btn prev3"
+            ><i class="fa-solid fa-chevron-left"></i
+          ></label>
+        </div>
+
+        <div id="project-carousel">
+          <div id="project-slides">
+            <div class="project-slide">
+              <img
+                src="https://png.pngtree.com/png-clipart/20240225/original/pngtree-coming-soon-stamp-in-red-colors-vector-png-image_14409711.png"
+                alt="project 1"
+              />
+            </div>
+            <div class="project-slide">
+              <img
+                src="https://png.pngtree.com/png-clipart/20240225/original/pngtree-coming-soon-stamp-in-red-colors-vector-png-image_14409711.png"
+                alt="project 2"
+              />
+            </div>
+            <div class="project-slide">
+              <img
+                src="https://png.pngtree.com/png-clipart/20240225/original/pngtree-coming-soon-stamp-in-red-colors-vector-png-image_14409711.png"
+                alt="project 3"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="project-next-btns">
+          <label for="project2" class="next-btn next1"
+            ><i class="fa-solid fa-chevron-right"></i
+          ></label>
+          <label for="project3" class="next-btn next2"
+            ><i class="fa-solid fa-chevron-right"></i
+          ></label>
+          <label for="project1" class="next-btn next3"
+            ><i class="fa-solid fa-chevron-right"></i
+          ></label>
+        </div>
+
+        <div id="project-info-container">
+          <div id="project1-info">
+            <h3 class="project-name">Proyecto 1</h3>
+            <div class="project-desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                minima impedit excepturi amet, perferendis inventore quia
+                voluptatum quis laboriosam nemo cum deserunt quisquam ea dolore
+                dolorem, quae commodi quos tempore?
+              </p>
+              <div class="project-tec" title="Tecnologías utilizadas">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+              </div>
+            </div>
+            <div class="project-btn"><a href="#">Ir al proyecto</a></div>
+          </div>
+
+          <div id="project2-info">
+            <h3 class="project-name">Proyecto 2</h3>
+            <div class="project-desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                tenetur, neque ipsum repellat unde a rerum, illum consequatur
+                hic modi, facilis quibusdam? Aperiam ipsa dolorem minus amet
+                eaque quo quod.
+              </p>
+              <div class="project-tec">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+              </div>
+            </div>
+            <div class="project-btn"><a href="#">Ir al proyecto</a></div>
+          </div>
+
+          <div id="project3-info">
+            <h3 class="project-name">Proyecto 3</h3>
+            <div class="project-desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                illo obcaecati reiciendis, veritatis error nostrum porro laborum
+                minus molestiae unde nesciunt impedit ducimus assumenda magni
+                aspernatur veniam quo debitis ad.
+              </p>
+              <div class="project-tec">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+              </div>
+            </div>
+            <div class="project-btn"><a href="#">Ir al proyecto</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div id="contact-container">
+        <div id="contact-left">
+          <h2>Contactame por acá</h2>
+          <p>
+            Si querés trabajar conmigo o simplemente charlar e intercambiar
+            ideas, ¡escribime!
+          </p>
+          <div id="social-links">
+            <a
+              href="https://www.github.com/JairoUY"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              id="github-btn"
+              ><i class="fa-brands fa-github"></i> Github</a
+            >
+            <a
+              href="https://www.linkedin.com/in/jairo-torres-/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              id="linkedin-btn"
+              ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+            >
+            <a
+              href="./assets/Jairo Torres CV.pdf"
+              target="_blank"
+              class="social-link"
+              id="cv-btn"
+              ><i class="fa-solid fa-file-arrow-down"></i> Descargar CV</a
+            >
+          </div>
+        </div>
+        <div id="contact-right">
+          <form action="#home" method="post" id="contact-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div id="ceibal-logo">
+        <img
+          src="https://jovenesaprogramar.edu.uy/storage/app/media/logo-jap-2022.svg"
+          alt="Ceibal - JaP"
+        />
+      </div>
+      <div id="copyright">
+        <p>&copy; 2025 Jairo Torres</p>
+      </div>
+      <div id="footer-nav">
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about-me">Sobre mi</a></li>
+          <li><a href="#skills">Mis Skills</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
