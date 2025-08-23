@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
@@ -240,8 +238,8 @@ hr {
   filter: grayscale(0);
 }
 .skill label {
-  /* width: 100%; */
-  /* height: 100%; */
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -323,7 +321,7 @@ hr {
 
 #projects > h2 {
   width: 70%;
-  margin: 5rem auto 1rem;
+  margin: 5rem auto 0;
   font-size: 4rem;
   font-family: "Cascadia Code", monospace;
   text-align: end;
@@ -367,12 +365,12 @@ hr {
 #projects-container input[type="radio"] {
   display: none;
 }
-#projects-container label {
+#projects-container div label {
   cursor: pointer;
   display: none;
   padding: 0.5rem;
+  margin: 0.5rem;
   border-radius: 10px;
-  margin: 1rem;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -405,31 +403,31 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 5vw;
+  font-size: 3vw;
 }
 #project-prev-btns label:hover,
 #project-next-btns label:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 /* Activar el label correspondiente */
-#project1:checked ~ #project-prev-btns .prev1,
-#project2:checked ~ #project-prev-btns .prev2,
-#project3:checked ~ #project-prev-btns .prev3,
-#project1:checked ~ #project-next-btns .next1,
-#project2:checked ~ #project-next-btns .next2,
-#project3:checked ~ #project-next-btns .next3 {
+#project1:checked ~ div #project-prev-btns .prev1,
+#project2:checked ~ div #project-prev-btns .prev2,
+#project3:checked ~ div #project-prev-btns .prev3,
+#project1:checked ~ div #project-next-btns .next1,
+#project2:checked ~ div #project-next-btns .next2,
+#project3:checked ~ div #project-next-btns .next3 {
   display: block;
 }
 /* Transiciones entre slides */
-#project1:checked ~ #project-carousel #project-slides {
+#project1:checked ~ div #project-carousel #project-slides {
   transform: translateX(0%);
 }
 
-#project2:checked ~ #project-carousel #project-slides {
+#project2:checked ~ div #project-carousel #project-slides {
   transform: translateX(-33.3333%);
 }
 
-#project3:checked ~ #project-carousel #project-slides {
+#project3:checked ~ div #project-carousel #project-slides {
   transform: translateX(-66.6666%);
 }
 /* INFO */
@@ -501,6 +499,7 @@ hr {
   min-height: 500px;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   border-radius: 20px;
   box-shadow: 2px 2px 4px rgb(0, 0, 0);
   overflow: hidden;
@@ -509,6 +508,7 @@ hr {
 #contact-left,
 #contact-right {
   width: 50%;
+  flex: 1 1 50%;
   padding: 2rem;
 }
 #contact-left {
@@ -633,7 +633,7 @@ footer {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  padding: 5rem 1rem;
+  padding: 5rem;
   background-color: var(--color-gray);
 }
 #ceibal-logo {
@@ -657,7 +657,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  align-items: start;
+  align-items: flex-end;
   justify-content: center;
   list-style: none;
 }
@@ -687,5 +687,61 @@ footer {
   }
   50% {
     transform: translateX(-50%) translateY(5px);
+  }
+}
+
+@media (max-width: 768px) {
+  #projects h2 {
+    width: 100%;
+    font-size: min(3rem, 7vw);
+    margin: 0;
+    text-align: center;
+  }
+  #projects-container {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+    height: fit-content;
+  }
+
+  #projects-container div label {
+    font-size: 1rem;
+    margin: 0.5rem;
+    flex: 1 1 10%;
+  }
+  #project-info-container {
+    height: auto;
+  }
+  #project-info-container,
+  .project-name {
+    font-size: 1rem;
+  }
+
+  #contact {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  #contact-container {
+    width: 100%;
+  }
+  #contact-left,
+  #contact-right {
+    height: 100%;
+    flex: 1 1 100%;
+  }
+  #contact-form textarea {
+    min-height: 100px;
+  }
+
+  footer {
+    height: 70%;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #footer-nav ul {
+    align-items: flex-start;
   }
 }
